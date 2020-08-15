@@ -1,0 +1,14 @@
+.todoApp {
+    width: 15em;
+}
+
+.todoHeader {
+    text-align: center;
+    margin: 16px;
+}
+
+#todoAppInstructions {
+    text-align: center;
+    font-size: 0.75em;
+    margin: 0;
+}

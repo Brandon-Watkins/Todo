@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./AddTodo.css";
 import PropTypes from "prop-types";
 
 let nextTodoId = 0;
@@ -9,7 +9,7 @@ const AddTodo = (props, { store }) => {
    let button = React.useRef(null);
    return (
       <div
-         id={'addTodo'}
+         id={'AddTodo'}
          onClick={() =>
             input.focus()}
          onLoad={() =>

@@ -1,4 +1,3 @@
-import "./styles.css";
 import * as Redux from "@reduxjs/toolkit";
 const { combineReducers } = Redux;
 const { createStore } = Redux;

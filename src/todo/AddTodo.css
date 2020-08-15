@@ -1,12 +1,3 @@
-.App {
-    font-family: sans-serif;
-    text-align: center;
-}
-
-.todoApp {
-    width: 15em;
-}
-
 .addTodo {
     display: block;
     align-content: center;
@@ -42,37 +33,4 @@
     background-color: #eee;
     font-size: 1em;
     padding: 0 0.4em;
-}
-
-.todoHeader {
-    text-align: center;
-    margin: 16px;
-}
-
-.todoList {
-
-}
-
-.todo {
-
-}
-
-.footer {
-    text-align: center;
-    margin: 3px;
-    display: block;
-}
-
-.filterSelection {
-
-}
-
-.filterLink {
-
-}
-
-#todoAppInstructions {
-    text-align: center;
-    font-size: 0.75em;
-    margin: 0;
 }

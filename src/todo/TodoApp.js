@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./TodoApp.css";
 
 import AddTodo from "./AddTodo";
 import TodoList from "./TodoList";
@@ -8,7 +8,7 @@ import Footer from "./Footer";
 const TodoApp = () => {
    return (
       <div
-         id={'todoApp'}
+         id={'TodoApp'}
       >
          <h1 id={'todoHeader'}>Todo</h1>
          <AddTodo />

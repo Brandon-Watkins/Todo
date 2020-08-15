@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./Todo.css";
 import PropTypes from "prop-types";
 import render from "../index.js";
 
@@ -14,7 +14,7 @@ const TodoList = (props, { store }) => {
       };
    }, [store.getState().todos]);
    return (
-      <ul id={'todoList'}>
+      <ul id={'TodoList'}>
          {getVisibleTodos(state.todos, state.visibilityFilter).map(todo =>
             <Todo
                key={todo.id}

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import "./styles.css";
 import PropTypes from "prop-types";
 
 import store from './todo/todoStore';
