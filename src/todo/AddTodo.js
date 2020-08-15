@@ -43,7 +43,6 @@ const AddTodo = (props, { store }) => {
             }}
             onClick={() => {
                if (input.value === '' || input.value === undefined) return input.focus();
-               console.log('<AddTodo> Adding Todo: id: ' + nextTodoId + ', input: ' + input.value);
                const temp = input.value;
                input.focus();
                input.value = '';

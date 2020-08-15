@@ -1,13 +1,11 @@
 import "./styles.css";
 import * as Redux from "@reduxjs/toolkit";
 const { combineReducers } = Redux;
+const { createStore } = Redux;
 
 
 //Reducer handling updating individual todo objects
 const todo = (state = {}, action) => {
-   console.log('<todoStore> ' + action.type + ' received.');
-   console.log('<todoStore> Before: id: ' + state.id + ', text: ' + state.text + ', completed: ' + state.completed);
-   console.log('<todoStore> After: id: ' + action.id + ', text: ' + action.text + ', completed: false');
    switch (action.type) {
       case 'ADD_TODO':
          return {
@@ -30,7 +28,6 @@ const todo = (state = {}, action) => {
 
 // Reducer handling updating the list containing all todo objects
 const todos = (state = [], action) => {
-   console.log('<todos> state: ' + [...state])
    switch (action.type) {
       case 'ADD_TODO':
          return [
@@ -63,4 +60,6 @@ const todoStore = combineReducers({
    visibilityFilter
 });
 
-export default todoStore;
+const store = createStore(todoStore);
+
+export default store;

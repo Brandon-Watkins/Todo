@@ -3,7 +3,6 @@ import "./styles.css";
 import PropTypes from "prop-types";
 
 const Todo = ({ completed, text, id }, { store }) => {
-   console.log('<Todo> Creating Todo: completed: ' + completed + ', text: ' + text + ', id: ' + id)
    return (
       <li
          onClick={() => {
