@@ -7,7 +7,9 @@ import Footer from "./Footer";
 
 const TodoApp = () => {
    return (
-      <div id={'todoApp'}>
+      <div
+         id={'todoApp'}
+      >
          <h1 id={'todoHeader'}>Todo</h1>
          <AddTodo />
          <TodoList />

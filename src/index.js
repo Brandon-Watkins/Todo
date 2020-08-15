@@ -1,19 +1,10 @@
-
-
-
-
-/** code to use separated components instead: **/
-
-
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
 import PropTypes from "prop-types";
 
 import store from './todo/todoStore';
 import App from './todo/TodoApp';
-
-const {Component} = React;
 
 class Provider extends Component {
    getChildContext() {
@@ -36,11 +27,20 @@ const render = () => {
       </Provider>, document.getElementById('root')
    );
 };
-render();
-store.subscribe(render);
+export default render;
 
-if (document) document.addEventListener('DOMContentLoaded', function() {
-   document.getElementsByTagName('input')[0].focus();
-   window.onclick = function() {document.getElementsByTagName('input')[0].focus()};
-})
+render();
+
+if (document) {
+   document.addEventListener('DOMContentLoaded', function() {
+      const input = document.getElementById('addTodoInput');
+      const app = document.getElementById('todoApp');
+      if (input) {
+         input.focus();
+         if (app) {
+            app.onclick = function() {input.focus()};
+         }
+      }
+   });
+}
 

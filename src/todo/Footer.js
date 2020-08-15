@@ -1,9 +1,10 @@
 import React from "react";
 import "./styles.css";
+import PropTypes from "prop-types";
 
 import FilterLink from './FilterLink';
 
-const Footer = () => {
+const Footer = (props, { store }) => {
    return (
       <p id={'footer'}>
          Show:
@@ -21,6 +22,9 @@ const Footer = () => {
          </FilterLink>
       </p>
    );
+};
+Footer.contextTypes = {
+   store: PropTypes.object
 };
 
 export default Footer;

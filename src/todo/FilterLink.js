@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const FilterLink = (props, { store }) => {
    const active = props.filter === store.getState().visibilityFilter;
    if (active) {
-      return <span id={'filterSelection'} style={{ }}>{props.children}</span>;
+      return <span id={'filterSelection'}>{props.children}</span>;
    }
    return (
       <a

@@ -1,11 +1,18 @@
 import React from "react";
 import "./styles.css";
 import PropTypes from "prop-types";
+import render from "../index.js";
 
 import Todo from "./Todo";
 
 const TodoList = (props, { store }) => {
    const state = store.getState();
+   React.useEffect( () => {
+      const unsubscribe = store.subscribe(render);
+      return () => {
+         unsubscribe();
+      };
+   }, [store.getState().todos]);
    return (
       <ul id={'todoList'}>
          {getVisibleTodos(state.todos, state.visibilityFilter).map(todo =>
