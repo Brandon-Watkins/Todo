@@ -1,12 +1,12 @@
 import React from "react";
-import "./Footer.css";
+import "./styles/Footer.css";
 import PropTypes from "prop-types";
 
 import FilterLink from './FilterLink';
 
 const Footer = (props, { store }) => {
    return (
-      <p id={'Footer'}>
+      <p id={'footer'}>
          Show:
          {' '}
          <FilterLink filter='SHOW_ALL'>

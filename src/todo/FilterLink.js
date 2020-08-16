@@ -1,5 +1,5 @@
 import React from "react";
-import "./FilterLink.css";
+import "./styles/FilterLink.css";
 import PropTypes from "prop-types";
 
 const FilterLink = (props, { store }) => {
@@ -9,7 +9,7 @@ const FilterLink = (props, { store }) => {
    }
    return (
       <a
-         id={'FilterLink'}
+         id={'filterLink'}
          href='#'
          onClick={(e) => {
             e.preventDefault() || e.stopPropagation()

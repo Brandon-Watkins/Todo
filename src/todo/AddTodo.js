@@ -1,15 +1,14 @@
 import React from "react";
-import "./AddTodo.css";
+import "./styles/AddTodo.css";
 import PropTypes from "prop-types";
 
 let nextTodoId = 0;
-
 const AddTodo = (props, { store }) => {
    let input = React.useRef(null);
    let button = React.useRef(null);
    return (
       <div
-         id={'AddTodo'}
+         id={'addTodo'}
          onClick={() =>
             input.focus()}
          onLoad={() =>
@@ -61,5 +60,4 @@ const AddTodo = (props, { store }) => {
 AddTodo.contextTypes = {
    store: PropTypes.object
 };
-
 export default AddTodo;

@@ -1,51 +1,37 @@
 {
   "name": "todo",
-  "version": "1.0.0",
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ],
-    "plugins": []
-  },
-  "description": "React Todo List",
-  "keywords": [
-    "react",
-    "todo"
-  ],
-  "main": "src/index.js",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@reduxjs/toolkit": "^1.4.0",
-    "expect": "^26.2.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
     "prop-types": "^15.7.2",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-redux": "^7.2.1",
-    "react-scripts": "^3.4.3"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.0",
-    "@babel/helper-plugin-utils": "^7.10.4",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-react": "^7.10.4",
-    "deep-freeze": "0.0.1",
-    "expect": "^26.2.0",
-    "typescript": "3.8.3"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
-    "test-OLD": "react-scripts test --env=jsdom",
-    "expect": "jest",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "author": "Brandon Watkins"
 }

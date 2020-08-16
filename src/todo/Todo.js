@@ -1,12 +1,11 @@
 import React from "react";
-import "./Todo.css";
+import "./styles/Todo.css";
 import PropTypes from "prop-types";
-
 
 const Todo = ({ completed, text, id }, { store }) => {
    return (
       <li
-         id={'Todo'}
+         id={'todo'}
          onClick={() => {
             store.dispatch({
                type: 'TOGGLE_TODO',

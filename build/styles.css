@@ -1,0 +1,78 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.todoApp {
+    width: 15em;
+}
+
+.addTodo {
+    display: block;
+    align-content: center;
+    margin: 0;
+    height: 1.25em;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    left: 0;
+    top: 0;
+}
+
+.addTodoInput {
+    height: calc(100% - 4px);
+    font-size: 1em;
+    position: absolute;
+    left: 0;
+    right: 6.5em;
+    border: 1px inset #ccc;
+    margin:0;
+    background-color: #eee;
+    width: calc(100% - 6.5em);
+}
+
+.addTodoButton {
+    height: 100%;
+    width: 6em;
+    position: absolute;
+    right: 0;
+    border: 1px outset #aaa;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #eee;
+    font-size: 1em;
+    padding: 0 0.4em;
+}
+
+.todoHeader {
+    text-align: center;
+    margin: 16px;
+}
+
+.todoList {
+
+}
+
+.todo {
+
+}
+
+.footer {
+    text-align: center;
+    margin: 3px;
+    display: block;
+}
+
+.filterSelection {
+
+}
+
+.filterLink {
+
+}
+
+#todoAppInstructions {
+    text-align: center;
+    font-size: 0.75em;
+    margin: 0;
+}

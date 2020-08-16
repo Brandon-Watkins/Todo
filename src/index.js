@@ -1,45 +1,17 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import PropTypes from "prop-types";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-import store from './todo/todoStore';
-import App from './todo/TodoApp';
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-class Provider extends Component {
-   getChildContext() {
-      return {
-         store: this.props.store
-      };
-   }
-   render() {
-      return this.props.children;
-   }
-}
-Provider.childContextTypes = {
-   store: PropTypes.object
-};
-
-const render = () => {
-   ReactDOM.render(
-      <Provider store={store}>
-         <App />
-      </Provider>, document.getElementById('root')
-   );
-};
-export default render;
-
-render();
-
-if (document) {
-   document.addEventListener('DOMContentLoaded', function() {
-      const input = document.getElementById('addTodoInput');
-      const app = document.getElementById('todoApp');
-      if (input) {
-         input.focus();
-         if (app) {
-            app.onclick = function() {input.focus()};
-         }
-      }
-   });
-}
-
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();

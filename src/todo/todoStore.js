@@ -1,7 +1,4 @@
-import * as Redux from "@reduxjs/toolkit";
-const { combineReducers } = Redux;
-const { createStore } = Redux;
-
+import { combineReducers, createStore } from "redux";
 
 //Reducer handling updating individual todo objects
 const todo = (state = {}, action) => {
